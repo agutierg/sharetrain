@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Share Train</string>
+
+
+    <string name="welcome_from">Origen</string>
+    <string name="welcome_to">Destino</string>
+    <string name="welcome_search">Buscar</string>
+</resources>
