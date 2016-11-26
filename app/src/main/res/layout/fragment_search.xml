@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sharetrain.gutsapps.com.fragment.SearchFragment">
+
+    <ImageView
+        android:id="@+id/ivTrainRails"
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_train_rails" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingTop="150dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/welcome_from"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/welcome_to"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tvDate"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_data_picker_red" />
+            </LinearLayout>
+
+            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sgTickeTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="2dp"
+                segmentedgroup:sc_corner_radius="10dp"
+                segmentedgroup:sc_tint_color="@color/black_overlay">
+
+                <RadioButton
+                    android:id="@+id/rbTicket"
+                    style="@style/RadioButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Billete" />
+
+                <RadioButton
+                    android:id="@+id/rbTable"
+                    style="@style/RadioButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Mesa" />
+            </info.hoang8f.android.segmented.SegmentedGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sgTimeFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="2dp"
+                segmentedgroup:sc_corner_radius="10dp"
+                segmentedgroup:sc_tint_color="@color/black_overlay">
+
+                <RadioButton
+                    android:id="@+id/rbMorning"
+                    style="@style/RadioButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Mañana" />
+
+                <RadioButton
+                    android:id="@+id/rbAfternoon"
+                    style="@style/RadioButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Tarde" />
+
+                <RadioButton
+                    android:id="@+id/rbEvening"
+                    style="@style/RadioButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Noche" />
+            </info.hoang8f.android.segmented.SegmentedGroup>
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btSearch"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_search"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            fbutton:buttonColor="@color/black_overlay"
+            fbutton:cornerRadius="5dp"
+            fbutton:shadowColor="@color/black_overlay"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+    </LinearLayout>
+
+</FrameLayout>

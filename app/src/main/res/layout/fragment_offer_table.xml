@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_welcome"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_detail_vertical_margin"
+    tools:context="sharetrain.gutsapps.com.fragment.OfferTicketFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_offer_ticket_marging_bottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tvExitOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="@string/exit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteExitOfferTable"
+                android:layout_width="@dimen/activity_offer_ticket_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gradientbg"
+                android:hint="@string/welcome_from"
+                android:padding="@dimen/activity_detail_general_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/activity_detail_main_font" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_offer_ticket_marging_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvExitDateOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="@string/dateDay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <ImageView
+                android:id="@+id/ivExitDateOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                fbutton:srcCompat="@drawable/ic_data_picker_red" />
+
+            <TextView
+                android:id="@+id/tvExitHourOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="@string/dateHour"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <ImageView
+                android:id="@+id/ivExitHourOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                fbutton:srcCompat="@drawable/ic_time_red" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_offer_ticket_marging_bottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tvArrivalOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="Llegada"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteArrivalOfferTable"
+                android:layout_width="@dimen/activity_offer_ticket_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gradientbg"
+                android:hint="@string/welcome_from"
+                android:padding="@dimen/activity_detail_general_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/activity_detail_main_font" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_offer_ticket_marging_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvArrivalDateOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="@string/dateDay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <ImageView
+                android:id="@+id/ivArrivalDateOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                fbutton:srcCompat="@drawable/ic_data_picker_red" />
+
+            <TextView
+                android:id="@+id/tvArrivalHourOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="@string/dateHour"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <ImageView
+                android:id="@+id/ivArrivalHourOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                fbutton:srcCompat="@drawable/ic_time_red" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_offer_ticket_marging_bottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tvTrainOfferTable"
+                android:layout_width="@dimen/activity_detail_width_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="@string/train"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <Spinner
+                android:id="@+id/spiTrainOfferTable"
+                android:layout_width="@dimen/activity_offer_ticket_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_offer_ticket_marging_bottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tvClassOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_detail_general_marging"
+                android:text="@string/clase"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_detail_main_font" />
+
+            <Spinner
+                android:id="@+id/spiClassOfferTable"
+                android:layout_width="@dimen/activity_offer_ticket_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_offer_ticket_marging_bottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tvPlacesOfferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="50dp"
+                android:text="@string/places"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/etPriceOfferTable"
+                android:layout_width="@dimen/activity_offer_ticket_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gradientbg"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/activity_detail_general_padding"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/activity_detail_price_font" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btAddOfferTable"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/addOffer"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        fbutton:buttonColor="@color/black_overlay"
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowColor="@color/black_overlay"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp" />
+</LinearLayout>

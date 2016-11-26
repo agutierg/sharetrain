@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navSearch"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="@string/navSearch" />
+        <item
+            android:id="@+id/navOffer"
+            android:icon="@drawable/ic_offert"
+            android:title="@string/navOffer" />
+        <item
+            android:id="@+id/navNotifications"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/navNotifications" />
+        <item
+            android:id="@+id/navPublications"
+            android:icon="@drawable/ic_publications"
+            android:title="@string/navPublications" />
+        <item
+            android:id="@+id/navAccount"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/navAccount" />
+    </group>
+
+    <item android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/navHelp"
+                android:title="@string/navHelp" />
+            <item
+                android:id="@+id/navAboutUs"
+                android:title="@string/navAboutUs" />
+            <item
+                android:id="@+id/navPrivacyPolicy"
+                android:title="@string/navPrivacyPolicy" />
+        </menu>
+    </item>
+
+</menu>

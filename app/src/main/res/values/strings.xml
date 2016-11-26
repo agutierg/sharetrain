@@ -1,8 +1,158 @@
 <resources>
+
+    <string name="detail_interested">Me Interesa</string>
+
     <string name="app_name">Share Train</string>
-
-
     <string name="welcome_from">Origen</string>
     <string name="welcome_to">Destino</string>
     <string name="welcome_search">Buscar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="navSearch">Buscar</string>
+    <string name="navOffer">Añadir Oferta</string>
+    <string name="navNotifications">Notificaciones</string>
+    <string name="navPublications">Publicaciones</string>
+    <string name="navAccount">Perfil</string>
+    <string name="more">Más</string>
+    <string name="navHelp">Ayuda</string>
+    <string name="navAboutUs">Sobre Nosotros</string>
+    <string name="navPrivacyPolicy">Política de Privacidad</string>
+
+    <string name="tvMorning">MAÑANA</string>
+    <string name="tvAfternoon">TARDE</string>
+    <string name="tvEvening">NOCHE</string>
+    <string name="tvDate">ELIGE\nUN\nDÍA</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Buscar</item>
+        <item>Ofertas</item>
+        <item>Notificaciones</item>
+        <item>Publicaciones</item>
+        <item>Perfil</item>
+    </string-array>
+
+    <string-array name="cities_array">
+        <item>Albacete</item>
+        <item>Alicante</item>
+        <item>Almería</item>
+        <item>Ávila</item>
+        <item>Badajoz</item>
+        <item>Barcelona</item>
+        <item>Bilbao</item>
+        <item>Burgos</item>
+        <item>Cáceres</item>
+        <item>Cádiz</item>
+        <item>Castellón</item>
+        <item>Ceuta</item>
+        <item>Ciudad Real</item>
+        <item>Córdoba</item>
+        <item>Cuenca</item>
+        <item>Gerona</item>
+        <item>Granada</item>
+        <item>Guadalajara</item>
+        <item>Huelva</item>
+        <item>Huesca</item>
+        <item>Jaén</item>
+        <item>La Coruña</item>
+        <item>Las Palmas</item>
+        <item>León</item>
+        <item>Lérida</item>
+        <item>Logroño</item>
+        <item>Lugo</item>
+        <item>Madrid</item>
+        <item>Málaga</item>
+        <item>Melilla</item>
+        <item>Mérida</item>
+        <item>Murcia</item>
+        <item>Orense</item>
+        <item>Oviedo</item>
+        <item>Palencia</item>
+        <item>Palma de Mallorca</item>
+        <item>Pamplona</item>
+        <item>Pontevedra</item>
+        <item>Salamanca</item>
+        <item>San Sebastián</item>
+        <item>Santa Cruz de Tenerife</item>
+        <item>Santander</item>
+        <item>Santiago de Compostela</item>
+        <item>Segovia</item>
+        <item>Sevilla</item>
+        <item>Soria</item>
+        <item>Tarragona</item>
+        <item>Teruel</item>
+        <item>Toledo</item>
+        <item>Valencia</item>
+        <item>Valladolid</item>
+        <item>Vitoria</item>
+        <item>Zamora</item>
+        <item>Zaragoza</item>
+    </string-array>
+
+    <string-array name="trainArray">
+        <item>AVE</item>
+        <item>Alvia</item>
+        <item>Avant</item>
+        <item>Media Distancia</item>
+        <item>Civia</item>
+        <item>Cercanias</item>
+        <item>Feve</item>
+        <item>Trenhotel</item>
+        <item>Mercancías</item>
+        <item>Transcantábrico</item>
+        <item>Al-Andalus</item>
+        <item>Tren de la Robla</item>
+        <item>Euromed</item>
+    </string-array>
+
+    <string-array name="classArray">
+        <item>Preferente</item>
+        <item>Business</item>
+        <item>Economy</item>
+        <item>Ida y vuelta</item>
+    </string-array>
+
+    <string-array name="sexArray">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <!-- Global -->
+    <string name="choseDay">Elige un día</string>
+    <string name="choseHour">Elige una hora</string>
+
+    <!-- Offer fragments -->
+    <!-- Ticket -->
+    <string name="tbTicket">Billete</string>
+    <string name="tbTable">Mesa</string>
+    <string name="exit">Salida</string>
+    <string name="arrival">Llegada</string>
+    <string name="dateDay">Elige día</string>
+    <string name="dateHour">Elige hora</string>
+    <string name="train">Tren</string>
+    <string name="clase">Clase</string>
+    <string name="addOffer">Publicar</string>
+    <string name="price">Precio</string>
+    <!-- Table -->
+    <string name="places">Huecos en\nla mesa</string>
+    <!-- Account -->
+    <string name="name">Nombre</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Teléfono móvil</string>
+    <string name="update">Actualizar</string>
+    <string name="sex">Sexo</string>
+    <string name="age">Edad</string>
+    <!-- List table/ticket -->
+    <string name="seller">Vendedor</string>
+    <string name="place">Huecos</string>
+    <!-- Notifications -->
+    <string name="tbSend">Enviadas</string>
+    <string name="tbReceived">Recibidas</string>
+    <string name="received">Recibida</string>
+    <string name="user">Usuario</string>
 </resources>

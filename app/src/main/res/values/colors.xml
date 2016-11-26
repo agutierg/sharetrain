@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="color_welcome">#ff80cbc4</color>
+
     <color name="black_overlay">#66000000</color>
     <color name="black">#000000</color>
     <color name="grey">#6E6E6E</color>
@@ -14,5 +16,7 @@
     <color name="image_border_start">#40990000</color>
     <color name="image_border_end">#FF660000</color>
     <color name="image_border_center">#FF8000</color>
+
+    <color name="light_grey">#cccccc</color>
 
 </resources>

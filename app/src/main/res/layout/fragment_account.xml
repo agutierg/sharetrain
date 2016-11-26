@@ -1,0 +1,168 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sharetrain.gutsapps.com.fragment.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_account_marging"
+        android:layout_marginRight="@dimen/activity_account_marging"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_account_marging">
+
+            <TextView
+                android:id="@+id/tvNameAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/general_font" />
+
+            <EditText
+                android:id="@+id/etNameAccount"
+                android:layout_width="@dimen/activity_account_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gradientbg"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:padding="@dimen/activity_detail_general_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/general_font" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_account_marging">
+
+            <TextView
+                android:id="@+id/tvSexAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/sex"
+                android:textColor="@color/white"
+                android:textSize="@dimen/general_font" />
+
+            <Spinner
+                android:id="@+id/spiSexAccount"
+                android:layout_width="@dimen/activity_account_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_account_marging">
+
+            <TextView
+                android:id="@+id/tvAgeAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/age"
+                android:textColor="@color/white"
+                android:textSize="@dimen/general_font" />
+
+            <EditText
+                android:id="@+id/etAgeAccount"
+                android:layout_width="@dimen/activity_account_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gradientbg"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="@dimen/activity_detail_general_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/general_font" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_account_marging">
+
+            <TextView
+                android:id="@+id/tvEmailAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/email"
+                android:textColor="@color/white"
+                android:textSize="@dimen/general_font" />
+
+            <EditText
+                android:id="@+id/etEmailAccount"
+                android:layout_width="@dimen/activity_account_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gradientbg"
+                android:inputType="textEmailAddress"
+                android:maxLength="20"
+                android:padding="@dimen/activity_detail_general_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/general_font" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_account_marging">
+
+            <TextView
+                android:id="@+id/tvPhoneAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/phone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/general_font" />
+
+            <EditText
+                android:id="@+id/etPhoneAccount"
+                android:layout_width="@dimen/activity_account_inputs"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/gradientbg"
+                android:inputType="number"
+                android:maxLength="9"
+                android:padding="@dimen/activity_detail_general_padding"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/general_font" />
+        </RelativeLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btUpdateAccount"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            fbutton:buttonColor="@color/black_overlay"
+            fbutton:cornerRadius="5dp"
+            fbutton:shadowColor="@color/black_overlay"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+    </LinearLayout>
+</FrameLayout>
